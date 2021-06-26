@@ -262,11 +262,12 @@ a:focus-visible {
 }
 
 .button--mimas {
+	height: 30px;
 	text-transform: uppercase;
 	margin-left: auto;
-	margin-top: 10px;
+	margin-top: 15px;
 	margin-right: auto;
-	max-width: 150px;
+	width: 150px;
 	letter-spacing: 0.05rem;
 	font-weight: 700;
 	font-size: 0.85rem;
@@ -276,16 +277,31 @@ a:focus-visible {
 	border: 1px solid #fff;
 	font-family: 'Lato', sans-serif;
 	background: #e7e7e7;
+	text-align: center;
 }
 
 .button--mimas span {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	mix-blend-mode: difference;
+}
+
+
+.button--mimas a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button--mimas  p {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .button--mimas::before {
 	content: '';
-
+/* color: black; */
 	background: #373737;
 	width: 120%;
 	left: -10%;
@@ -309,6 +325,8 @@ a:focus-visible {
 .button--atlas:hover > span {
 	opacity: 0;
 }
+
+
 
 .marquee {
 	position: absolute;
