@@ -1,13 +1,13 @@
 body, html
-
 {
+	background-color: #373737;
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: helvetica, arial;
-	background: #f9f9f9;
-	color: #111;
+	/* background: #f9f9f9; */
+	color: #fff;
 	overflow: hidden;
 	font-size: 16px;
 
@@ -26,6 +26,14 @@ body, html
 	vertical-align: middle;
 	text-align: center;
 }
+
+.arrow-back{	
+	position: absolute;
+	top: 4%;
+	left: 4%;
+}
+
+
 
 .quiz-frame
 {
@@ -49,6 +57,16 @@ body, html
 {
 	margin: 10px;
 }
+
+
+.choose-tests-title{
+	color: white;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 330px;
+}
+
 
 .quiz__footer 
 {
@@ -82,19 +100,27 @@ body, html
 }
 
 .button_static{
+	text-align: center;
 	text-decoration: none;
-	border: 0;
 	margin-top: 20px;
+	width: 100%;
 	max-width: 340px;
 	border-radius: 10px;
-	background: #B3B3B3;
-	color: #fff;
+	background: #fff;
+	color:  #373737;
 	padding: 10px 25px;
 	width: 100%;
 	font-size: 15pt;
 	display: block;
-	margin: 5px auto;
+	margin: 8px auto;
 	cursor: pointer;
+	border: #fff 2px solid;
+	transition: all 0.2s linear ;
+}
+
+.button_static:hover{
+	background: #373737;
+	color:  #fff;
 }
 
 .button_wrong 
@@ -112,7 +138,76 @@ body, html
 	background: #B3B3B3;
 }
 
+.alert-box{
+	display: none;
+}
+/* .alert-box _active */
+.alert_box_active{
+	background-color: #fff;
+	max-height: 230px;
+	max-width: 250px;
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+}
+
+.stop-herf{
+	
+	color: #fff;
+	list-style: none;
+	text-decoration: none;
+	font-family: helvetica, arial;
+}
+
+.stop-herf-box{
+	/* margin-top: 85px; */
+	
+	/* margin-left: auto; */
+	/* margin-right: 10px; */
+	padding-top: 10px;
+	background-color: #6477EB;
+	height: 35px;
+	border-radius: 8px;
+	width: 100px;
+	text-align: center;
+}
+
+.exit-herf{
+/* padding-top: 5px; */
+
+	color: #fff;
+	list-style: none;
+	text-decoration: none;
+	font-family: helvetica, arial;
+}
 
 
+.exit-gerf-box{
+	/* margin-top: 65px; */
+	/* margin-left: auto; */
+	/* margin-right: 10px; */
+	padding-top: 10px;
+	background-color: #6477EB;
+	height: 35px;
+	border-radius: 8px;
+	width: 100px;
+	text-align: center;
+}
+@media (max-width: 415px) {
+	.button_static{
+		max-width: 280px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 360px) {
+	.button_static{
+		max-width: 235px;
+		width: 100%;
+	}
+}
 
 /* .choose-tests-title */

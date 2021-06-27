@@ -21,3 +21,12 @@
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	margin: 20px;
 } */
+
+
+.choose-tests-title{
+	color: black;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 330px;
+}
