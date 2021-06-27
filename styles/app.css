@@ -153,6 +153,11 @@ body, html
 	top: 30%;
 	left: 30%;
 }
+.arrow-back{	
+	position: absolute;
+	top: 4%;
+	left: 4%;
+}
 
 .stop-herf{
 	
